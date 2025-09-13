@@ -1,0 +1,34 @@
+const skillBuckets = [
+  {
+    name: "Frontend",
+    icon: "code",
+    items: ["React", "JavaScript", "Vite", "APIs", "HTML", "CSS"],
+  },
+  {
+    name: "Backend",
+    icon: "code",
+    items: ["Node.js", "Express", "Databases", "APIs", "Authentication", "Deployment", "PostgreSQL", "MongoDB"],
+  },
+  {
+    name: "iOS Development",
+    icon: "ar",
+    items: ["VisionOS", "RealityKit", "Reality Composer Pro", "Unity", "Xcode", "Swift", "SwiftUI"],
+  },
+  {
+    name: "Design",
+    icon: "design",
+    items: ["Figma", "Miro", "Design Systems", "UI/UX", "Prototyping", "User Research", "Agile", "Kaupapa Māori"],
+  },
+  {
+    name: "Motion & 3D",
+    icon: "mr",
+    items: ["After Effects", "Blender", "Maya", "3D Modeling", "Animation", "Digital Fabrication", "Reality Composer Pro"],
+  },
+    {
+    name: "Project Management",
+    icon: "mr",
+    items: ["Agile", "Scrum", "Jira", "Trello", "Asana", "Monday.com", "Slack", "Workflow", "Team Leadership", "Communication"],
+  },
+];
+
+export default skillBuckets;
