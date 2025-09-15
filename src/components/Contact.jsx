@@ -20,7 +20,7 @@ export default function Contact() {
           href="mailto:thomasperese@hotmail.com"
           fullWidth
         >
-            Email
+          Email
         </Button>
         <Button
           variant="outlined"
