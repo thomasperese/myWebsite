@@ -31,22 +31,38 @@ duration: 0.5,
 
 export default function SkillsGrid({ buckets }) {
 return (
-<Grid container spacing={3}>
+<Grid
+container
+spacing={3}
+justifyContent="center"
+alignItems="center"
+>
 {buckets.map((b, idx) => (
-<Grid key={b.name} item xs={12} sm={6} md={3}>
+<Grid
+key={b.name}
+item
+xs={12}
+sm={6}
+md={3}
+display="flex"
+justifyContent="center"
+>
 <motion.div
 custom={idx}
 initial="hidden"
 whileInView="visible"
 viewport={{ once: true, amount: 0.2 }}
 variants={cardVariants}
+style={{ display: "flex", justifyContent: "center", width: "100%" }}
 >
 <Card
 sx={{
 width: "100%",
-boxSizing: "border-box",
-maxWidth: { xs: "100%", sm: 300, md: 300 },
+maxWidth: 300,
 margin: "0 auto",
+display: "flex",
+flexDirection: "column",
+alignItems: "center",
 }}
 >
 <CardContent>

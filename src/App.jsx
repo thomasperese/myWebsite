@@ -22,7 +22,7 @@ return (
 <ThemeProvider theme={theme}>
 <CssBaseline />
 <Header />
-<TabsNav tab={tab} setTab={setTab} />
+<TabsNav tab={tab} setTab={setTab}  />
 
 <Container maxWidth="lg" sx={{ py: 6 }}>
 {tab === 0 && (

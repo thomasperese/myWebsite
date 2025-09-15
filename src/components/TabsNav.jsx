@@ -7,7 +7,7 @@ const tabLabels = ["Projects", "Skills", "About", "Education", "Contact"];
 export default function TabsNav({ tab, setTab }) {
 return (
 <Box sx={{ py: 6, borderBottom: "1px solid rgba(255,255,255,0.06)", background: "linear-gradient(180deg, rgba(14,19,36,1) 0%, rgba(5,7,15,1) 100%)" }}>
-<Container maxWidth="lg">
+<Container maxWidth="lg" >
 <Typography variant="h3" fontWeight={700} gutterBottom>
 Creative Technologist • Full stack Developer • AR/VR Developer • Product Manager
 </Typography>
