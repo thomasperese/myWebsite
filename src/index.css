@@ -24,10 +24,27 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  background:
+    /* Turquoise wave: many waves */
+    url("data:image/svg+xml,%3Csvg width='100%25' height='480' viewBox='0 0 1840 480' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%232EC4B6' fill-opacity='0.3' d='M-400,400 Q0,500 200,400 Q400,300 600,400 Q800,500 1000,400 Q1200,300 1400,400 Q1600,500 1840,400 L1840,480 L-400,480 Z'%3E%3C/path%3E%3C/svg%3E") -100px 60px no-repeat,
+    /* Light blue wave: many waves */
+    url("data:image/svg+xml,%3Csvg width='100%25' height='480' viewBox='0 0 1440 480' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23e0eafc' fill-opacity='1' d='M0,320 Q180,400 360,320 Q540,240 720,320 Q900,400 1080,320 Q1260,240 1440,320 L1440,480 L0,480 Z'%3E%3C/path%3E%3C/svg%3E") 0 180px no-repeat;
+  background-size: cover, cover;
+  animation: waveMove 10s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+  0%, 100% {
+    background-position:
+      -100px 60px,
+      0 180px;
+  }
+  50% {
+    background-position:
+      -500px 60px,    /* much more horizontal movement */
+      -700px 200px;  /* much more horizontal movement */
+  }
 }
 
 h1 {
@@ -53,6 +70,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {

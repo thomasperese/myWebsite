@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid, Card, CardContent, Stack, Typography, Chip, useTheme } from "@mui/material";
+import { Grid, Card, CardContent, Stack, Typography, Chip } from "@mui/material";
+import { motion } from "framer-motion";
 import CodeIcon from "@mui/icons-material/Code";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
@@ -14,14 +15,40 @@ mr: <PrecisionManufacturingIcon fontSize="small" />,
 };
 
 
-export default function SkillsGrid({ buckets }) {
-const theme = useTheme();
+const cardVariants = {
+hidden: { opacity: 0, x: -50 },
+visible: (i) => ({
+opacity: 1,
+x: 0,
+transition: {
+delay: i * 0.1,
+ease: "easeInOut",
+duration: 0.5,
+},
+}),
+};
 
+
+export default function SkillsGrid({ buckets }) {
 return (
 <Grid container spacing={3}>
-{buckets.map((b) => (
+{buckets.map((b, idx) => (
 <Grid key={b.name} item xs={12} sm={6} md={3}>
-<Card>
+<motion.div
+custom={idx}
+initial="hidden"
+whileInView="visible"
+viewport={{ once: true, amount: 0.2 }}
+variants={cardVariants}
+>
+<Card
+sx={{
+width: "100%",
+boxSizing: "border-box",
+maxWidth: { xs: "100%", sm: 300, md: 300 },
+margin: "0 auto",
+}}
+>
 <CardContent>
 <Stack direction="row" spacing={1} alignItems="center" mb={1}>
 {iconMap[b.icon]}
@@ -35,8 +62,8 @@ label={i}
 size="small"
 variant="outlined"
 sx={{
-color: "#2EC4B6", // turquoise text color
-border: "1px solid #2EC4B6", // turquoise border
+color: "#2EC4B6",
+border: "1px solid #2EC4B6",
 fontWeight: 500,
 }}
 />
@@ -44,6 +71,7 @@ fontWeight: 500,
 </Stack>
 </CardContent>
 </Card>
+</motion.div>
 </Grid>
 ))}
 </Grid>

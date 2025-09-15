@@ -8,12 +8,11 @@ export default function TabsNav({ tab, setTab }) {
 return (
 <Box sx={{ py: 6, borderBottom: "1px solid rgba(255,255,255,0.06)", background: "linear-gradient(180deg, rgba(14,19,36,1) 0%, rgba(5,7,15,1) 100%)" }}>
 <Container maxWidth="lg">
-<Typography variant="h4" fontWeight={700} gutterBottom>
-Creative Technologist • Frontend Engineer • AR/VR Developer
+<Typography variant="h3" fontWeight={700} gutterBottom>
+Creative Technologist • Full stack Developer • AR/VR Developer • Product Manager
 </Typography>
 <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 900 }}>
-Māori • Samoan • Fijian • Tongan — weaving kaupapa Māori values of <em>manaakitanga</em> (care), <em>kaitiakitanga</em> (guardianship), and
-<em> whakawhanaungatanga</em> (relationship-building) into modern software, design, and XR.
+Māori • Samoan • Fijian • Tongan • Irish • from New Zealand — weaving cultural values into modern technology.
 </Typography>
 <Tabs value={tab} onChange={(_, v) => setTab(v)} textColor="secondary" indicatorColor="secondary" variant="scrollable" scrollButtons="auto" sx={{ mt: 3 }}>
 {tabLabels.map((label, idx) => (

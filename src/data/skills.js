@@ -2,7 +2,7 @@ const skillBuckets = [
   {
     name: "Frontend",
     icon: "code",
-    items: ["React", "JavaScript", "Vite", "APIs", "HTML", "CSS"],
+    items: ["React", "JavaScript", "Vite", "APIs", "HTML", "CSS", "media queries", "responsive design"],
   },
   {
     name: "Backend",
@@ -12,7 +12,7 @@ const skillBuckets = [
   {
     name: "iOS Development",
     icon: "ar",
-    items: ["VisionOS", "RealityKit", "Reality Composer Pro", "Unity", "Xcode", "Swift", "SwiftUI"],
+    items: ["VisionOS", "RealityKit", "Reality Composer Pro", "Unity", "Xcode", "Swift", "SwiftUI", "ARKit"],
   },
   {
     name: "Design",

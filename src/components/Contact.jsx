@@ -8,9 +8,6 @@ import PhoneIcon from "@mui/icons-material/Phone";
 export default function Contact() {
   return (
     <Box>
-      <Typography variant="h6" fontWeight={600} gutterBottom>
-        Contact
-      </Typography>
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={2}
@@ -23,7 +20,7 @@ export default function Contact() {
           href="mailto:thomasperese@hotmail.com"
           fullWidth
         >
-          thomasperese@hotmail.com
+            Email
         </Button>
         <Button
           variant="outlined"
@@ -51,10 +48,10 @@ export default function Contact() {
           variant="outlined"
           color="secondary"
           startIcon={<PhoneIcon />}
-          href="tel:+64211234567"
+          href="tel:+1 (646) 676-1904"
           fullWidth
         >
-          +64 21 123 4567
+          Phone
         </Button>
       </Stack>
     </Box>

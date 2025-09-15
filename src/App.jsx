@@ -24,11 +24,10 @@ return (
 <Header />
 <TabsNav tab={tab} setTab={setTab} />
 
-
 <Container maxWidth="lg" sx={{ py: 6 }}>
 {tab === 0 && (
-<Box>
-<Typography variant="h5" fontWeight={600} gutterBottom>
+<Box justifyContent={"center"} alignItems="center" display="flex" flexDirection="column">
+<Typography variant="h4" fontWeight={600} gutterBottom>
 Featured Projects
 </Typography>
 <ProjectsGrid projects={projects} />
@@ -37,8 +36,8 @@ Featured Projects
 
 
 {tab === 1 && (
-<Box>
-<Typography variant="h5" fontWeight={600} gutterBottom>
+<Box justifyContent={"center"} alignItems="center" display="flex" flexDirection="column">
+<Typography variant="h4" fontWeight={600} gutterBottom>
 Technical Skills
 </Typography>
 <SkillsGrid buckets={skillBuckets} />
@@ -47,8 +46,8 @@ Technical Skills
 
 
 {tab === 2 && (
-<Box>
-<Typography variant="h5" fontWeight={600} gutterBottom>
+<Box justifyContent={"center"} alignItems="center" display="flex" flexDirection="column">
+<Typography variant="h4" fontWeight={600} gutterBottom>
 About
 </Typography>
 <About />
@@ -57,8 +56,8 @@ About
 
 
 {tab === 3 && (
-<Box>
-<Typography variant="h5" fontWeight={600} gutterBottom>
+<Box justifyContent={"center"} alignItems="center" display="flex" flexDirection="column">
+<Typography variant="h4" fontWeight={600} gutterBottom>
 Education
 </Typography>
 <Education />
@@ -66,8 +65,8 @@ Education
 )}
 
 {tab === 4 && (
-<Box>
-<Typography variant="h5" fontWeight={600} gutterBottom>
+<Box justifyContent={"center"} alignItems="center" display="flex" flexDirection="column">
+<Typography variant="h4" fontWeight={600} gutterBottom>
 Contact
 </Typography>
 <Contact />
@@ -79,7 +78,7 @@ Contact
 <Box component="footer" sx={{ py: 6, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
 <Container maxWidth="lg">
 <Typography variant="body2" color="text.secondary">
-© {new Date().getFullYear()} Thomas Kereama Perese — Built with React & Material UI
+© {new Date().getFullYear()} Thomas Kereama Perese — Built with React
 </Typography>
 </Container>
 </Box>
